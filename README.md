@@ -1,4 +1,4 @@
-## Menyu - A menu website
+# Menyu - A menu website
 
 This app is called menyu which means menu in japanese. It is made using ReactJS and NodeJS. This project is made by me for my college project. 
 
