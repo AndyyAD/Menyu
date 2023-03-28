@@ -6,10 +6,10 @@ export default function Navbar() {
         <nav className="navbar">
             <div className="navbar-wrap nav-container">
                 <div className="ham-menu">
-                    <div className="ham-menu">
-                        <span className="ham1"> </span>
-                        <span className="ham2"> </span>
-                        <span className="ham3"> </span>
+                    <div className="ham-lines">
+                        <span className="ham-line"> </span>
+                        <span className="ham-line"> </span>
+                        <span className="ham-line"> </span>
                     </div>
                     <ul className="nav-items">
                         <li className="nav-item1"> <a href="/"> Home </a> </li>

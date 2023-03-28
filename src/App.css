@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.ham-menu span{
+.ham-lines span{
     width: 2.6rem;
     height: .4rem;
     display: block;
@@ -25,5 +25,5 @@
 
 .logo{
     font-family: 'Dr Sugiyama', cursive;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
 }
