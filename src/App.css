@@ -1,0 +1,29 @@
+.navbar{
+    width: 100%;
+    height: 10.6rem;
+}
+
+.navbar-wrap{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ham-menu span{
+    width: 2.6rem;
+    height: .4rem;
+    display: block;
+    background: var(--primary);
+    margin: .4rem auto;
+    border-radius: 2rem;
+}
+
+.nav-items{
+    display: none;
+}
+
+.logo{
+    font-family: 'Dr Sugiyama', cursive;
+    font-size: 3.5rem;
+}

@@ -10,11 +10,21 @@
 
 html{
 	font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: var(--background);
     font-family: 'Times New Roman', Times, serif;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
 }
 
 /* ------------------------------ Colors ------------------------------ */
@@ -24,4 +34,12 @@ body{
     --primary: #2C3333;
     --secondary: #395B64;
     --tertiary: #A5C9CA;
+}
+
+/* ------------------------------ Container ------------------------------ */
+
+.nav-container{
+    width: 1400px;
+    max-width: 90%;
+    margin: 0 auto;
 }
