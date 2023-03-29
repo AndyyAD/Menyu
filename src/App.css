@@ -27,3 +27,18 @@
     font-family: 'Dr Sugiyama', cursive;
     font-size: 3.2rem;
 }
+
+.ham-lines.active .ham-line:nth-child(1){
+    transform: translateY(.8rem) rotate(45deg);
+    transition: transform .5s;
+}
+
+.ham-lines.active .ham-line:nth-child(2){
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.ham-lines.active .ham-line:nth-child(3){
+    transform: translateY(-.8rem) rotate(-45deg);
+    transition: transform .5s;
+}
