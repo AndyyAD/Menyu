@@ -46,7 +46,8 @@
     position: absolute;
     top: 50%;
     left: -100%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);   
+    transition: all .5s; 
 }
 
 .nav-items li{
@@ -66,5 +67,4 @@
 
 .nav-items.active{
     left: 50%;
-    transition: all .5s;
 }
