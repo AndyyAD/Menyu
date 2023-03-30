@@ -1,23 +1,12 @@
 import React from 'react'
 import InstaLogo from '../img/insta.svg'
+import Hamburger from './Hamburger'
 
 export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-wrap nav-container">
-                <div className="ham-menu">
-                    <div className="ham-lines">
-                        <span className="ham-line"> </span>
-                        <span className="ham-line"> </span>
-                        <span className="ham-line"> </span>
-                    </div>
-                    <ul className="nav-items">
-                        <li className="nav-item1"> <a href="/"> Home </a> </li>
-                        <li className="nav-item2"> <a href="/"> Scan QR </a> </li>
-                        <li className="nav-item3"> <a href="/"> About Us </a> </li>
-                        <li className="nav-item4"> <a href="/"> Register </a> </li>
-                    </ul>
-                </div>
+                <Hamburger/>
                 <a href="/"> <h1 className="logo"> Menyu </h1> </a>
                 <div className="insta">
                     <a href="/"> <img src={InstaLogo} alt="Instagram Logo"/> </a>

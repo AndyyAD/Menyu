@@ -17,10 +17,7 @@
     background: var(--primary);
     margin: .4rem auto;
     border-radius: 2rem;
-}
-
-.nav-items{
-    display: none;
+    transition: transform .5s;
 }
 
 .logo{
@@ -30,15 +27,44 @@
 
 .ham-lines.active .ham-line:nth-child(1){
     transform: translateY(.8rem) rotate(45deg);
-    transition: transform .5s;
+    
 }
 
 .ham-lines.active .ham-line:nth-child(2){
     transform: scale(0);
-    transition: transform .5s;
 }
 
 .ham-lines.active .ham-line:nth-child(3){
     transform: translateY(-.8rem) rotate(-45deg);
-    transition: transform .5s;
+}
+
+.nav-items{
+    width: 100%;
+    background-color: var(--background);
+    margin-top: 5rem;
+    padding: 10rem;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);    
+}
+
+.nav-items li{
+    font-size: 2.5rem;
+    border-bottom: 1px solid var(--primary);
+    text-align: center;
+}
+
+.nav-items li a{
+    display: block;
+    padding: 3rem;
+}
+
+.nav-items .nav-item1{
+    border-top: 1px solid var(--primary);
+}
+
+.nav-items.active{
+    left: 50%;
+    transition: all .5s;
 }

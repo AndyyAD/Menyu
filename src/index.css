@@ -39,7 +39,13 @@ a{
 /* ------------------------------ Container ------------------------------ */
 
 .nav-container{
-    width: 1400px;
-    max-width: 90%;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ham-container{
+    max-width: 1000px;
+    width: 90%;
     margin: 0 auto;
 }
