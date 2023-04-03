@@ -1,6 +1,6 @@
 import React from 'react'
 import InstaLogo from '../img/insta.svg'
-import Hamburger from './Hamburger'
+import Hamburger from './Hamburger-menu'
 
 export default function Navbar() {
     return (
