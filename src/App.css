@@ -1,6 +1,8 @@
 .navbar{
     width: 100%;
     height: 10.6rem;
+    position: absolute;
+    z-index: 1000;
 }
 
 .navbar-wrap{
@@ -44,9 +46,9 @@
     margin-top: 5rem;
     padding: 10rem;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: -100%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, 0%);   
     transition: all .5s; 
 }
 
@@ -67,4 +69,36 @@
 
 .nav-items.active{
     left: 50%;
+}
+
+/* ------------------------------ Showcase ------------------------------ */
+
+.scMain{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(231, 246, 242, 0.7), rgba(231, 246, 242, 0.7)), url(./img/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scTextWrapper{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scHead{
+    text-align: center;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 7rem;
+    color: var(--primary);
+    letter-spacing: -.3rem;
+}
+
+.scText{
+    color: var(--primary);
+    font-size: 2.3rem;
 }
