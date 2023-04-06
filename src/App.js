@@ -16,11 +16,17 @@ function App() {
 				<img src={Arrow} alt="" className="downArrow"/>
 			</section>
 			<section className="search">
-				<h1 className="searchHead"> Search your restaurant </h1>
-				<p className="searchText"> Just search and select. It’s that simple. </p>
-				<input type="text" className='searchBox'/>
-				<img src={Search} alt="" />
-				<img src={Chicken} alt="" />
+				<div className="searchWrap nav-container">
+					<div className="scLeft">
+						<h1 className="searchHead"> Search your restaurant </h1>
+						<p className="searchText"> Just search and select. It’s that simple. </p>
+						<div className="searchBox">
+							<input type="text"/>
+							<img src={Search} alt="" />
+						</div>
+					</div>
+					<img src={Chicken} alt="" className="chickenImg"/>
+				</div>
 			</section>
 		</>
 	);
