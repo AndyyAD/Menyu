@@ -75,11 +75,11 @@
 
 .scMain{
     width: 100%;
-    height: 110vh;
+    height: 172vh;
     background-image: linear-gradient(rgba(231, 246, 242, 0.7), rgba(231, 246, 242, 0.7)), url(./img/background.png);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .scTextWrapper{
@@ -178,5 +178,13 @@
     transform: translate(-100%, -50%);
 }
 
+/* ------------------------------ Register ------------------------------ */
 
+.restaurantImg{
+    width: 35rem;
+    height: 41.7rem;
+}
 
+.register{
+    display: flex;
+}
