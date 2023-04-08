@@ -1,18 +1,18 @@
-.navbar{
+.navbar {
     width: 100%;
     height: 10.6rem;
     position: absolute;
     z-index: 1000;
 }
 
-.navbar-wrap{
+.navbar-wrap {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.ham-lines span{
+.ham-lines span {
     width: 2.6rem;
     height: .4rem;
     display: block;
@@ -22,25 +22,25 @@
     transition: transform .5s;
 }
 
-.logo{
+.logo {
     font-family: 'Dr Sugiyama', cursive;
     font-size: 3.2rem;
 }
 
-.ham-lines.active .ham-line:nth-child(1){
+.ham-lines.active .ham-line:nth-child(1) {
     transform: translateY(.8rem) rotate(45deg);
-    
+
 }
 
-.ham-lines.active .ham-line:nth-child(2){
+.ham-lines.active .ham-line:nth-child(2) {
     transform: scale(0);
 }
 
-.ham-lines.active .ham-line:nth-child(3){
+.ham-lines.active .ham-line:nth-child(3) {
     transform: translateY(-.8rem) rotate(-45deg);
 }
 
-.nav-items{
+.nav-items {
     width: 100%;
     background-color: var(--background);
     margin-top: 5rem;
@@ -48,32 +48,32 @@
     position: absolute;
     top: 80%;
     left: -100%;
-    transform: translate(-50%, 0%);   
-    transition: all .5s; 
+    transform: translate(-50%, 0%);
+    transition: all .5s;
 }
 
-.nav-items li{
+.nav-items li {
     font-size: 2.5rem;
     border-bottom: 1px solid var(--primary);
     text-align: center;
 }
 
-.nav-items li a{
+.nav-items li a {
     display: block;
     padding: 3rem;
 }
 
-.nav-items .nav-item1{
+.nav-items .nav-item1 {
     border-top: 1px solid var(--primary);
 }
 
-.nav-items.active{
+.nav-items.active {
     left: 50%;
 }
 
 /* ------------------------------ Showcase ------------------------------ */
 
-.scMain{
+.scMain {
     width: 100%;
     height: 172vh;
     background-image: linear-gradient(rgba(231, 246, 242, 0.7), rgba(231, 246, 242, 0.7)), url(./img/background.png);
@@ -82,14 +82,14 @@
     background-size: contain;
 }
 
-.scTextWrapper{
+.scTextWrapper {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.scHead{
+.scHead {
     text-align: center;
     font-family: 'Source Serif 4', serif;
     font-weight: 700;
@@ -98,12 +98,12 @@
     letter-spacing: -.3rem;
 }
 
-.scText{
+.scText {
     color: var(--primary);
     font-size: 2.3rem;
 }
 
-.downArrow{
+.downArrow {
     width: 2.5rem;
     height: 1.5rem;
     position: absolute;
@@ -112,7 +112,7 @@
     transform: translateX(-50%);
 }
 
-.search{
+.search {
     width: 100%;
     height: auto;
     background-color: var(--secondary);
@@ -123,33 +123,33 @@
     padding: 6rem 0;
 }
 
-.searchWrap{
+.searchWrap {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.searchHead{
+.searchHead {
     text-align: center;
     font-family: 'Source Serif 4', serif;
     font-weight: 800;
-    font-size:7rem;
+    font-size: 7rem;
     color: var(--background);
 }
 
-.searchText{
+.searchText {
     color: var(--tertiary);
     font-size: 2.5rem;
     text-align: center;
     margin: 1rem 0rem;
 }
 
-.chickenImg{
+.chickenImg {
     width: 35rem;
     margin-left: 7rem;
 }
 
-.searchBox{
+.searchBox {
     margin: 0 auto;
     margin-top: 4rem;
     width: 60rem;
@@ -157,19 +157,19 @@
     position: relative;
 }
 
-.searchBox input{
+.searchBox input {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
     border: none;
     outline: none;
     overflow: hidden;
-    padding: 0 7rem 0  3rem;
+    padding: 0 7rem 0 3rem;
     background-color: var(--background);
     color: var(--primary);
 }
 
-.searchBox img{
+.searchBox img {
     width: 2.5rem;
     height: 2.5rem;
     position: absolute;
@@ -180,11 +180,49 @@
 
 /* ------------------------------ Register ------------------------------ */
 
-.restaurantImg{
+.restaurantImg {
     width: 35rem;
     height: 41.7rem;
 }
 
-.register{
+.register {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.restaurantImg {
+    width: 35rem;
+    margin-right: 7rem;
+}
+
+.regHead {
+    text-align: center;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 800;
+    font-size: 6rem;
+    color: var(--primary);
+}
+
+.regText {
+    color: var(--primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.regBTN {
+    padding: 1.5rem 4rem;
+    border-radius: 3rem;
+    outline: none;
+    border: none;
+    background: var(--secondary);
+    color: var(--background);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-60%, 30%);
+    cursor: pointer;
 }
