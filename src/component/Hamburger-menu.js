@@ -27,7 +27,7 @@ export default class Hamburger extends Component {
                     <li className="nav-item1"> <a href="/"> Home </a> </li>
                     <li className="nav-item2"> <a href="/"> Scan QR </a> </li>
                     <li className="nav-item3"> <a href="/"> About Us </a> </li>
-                    <li className="nav-item4"> <a href="/"> Register </a> </li>
+                    <li className="nav-item4"> <a href="/"> Register/Login </a> </li>
                 </ul>
             </div>
         )
