@@ -16,6 +16,7 @@ function App() {
 				</div>
 				<img src={Arrow} alt="" className="downArrow" />
 			</section>
+
 			<section className="search">
 				<div className="searchWrap nav-container">
 					<div className="scLeft">
@@ -29,13 +30,30 @@ function App() {
 					<img src={Chicken} alt="" className="chickenImg" />
 				</div>
 			</section>
+
 			<section className="register nav-container">
-				<img src={Restaurant} alt="" className="restaurantImg"/>
+				<img src={Restaurant} alt="" className="restaurantImg" />
 				<div className="regRight">
 					<h1 className="regHead"> Do you own a Restaurant? </h1>
 					<p className="regText"> Start your new menu with us with just a few clicks. It’s that simple. </p>
 					<button className='regBTN'> Register </button>
 				</div>
+			</section>
+
+			<section className="aboutUs container">
+				<h1 className="aboutHead"> About Us... </h1>
+				<p className="aboutText">
+					Have you ever kept waiting for a waiter to take your order at restaurant? <br />
+					or <br />
+					As a restaurant owner, do you want to serve your customer better and manage <br />
+					orders better. <br />
+					<br />
+					Well, here we are. <br />
+					Menyu is the perfect place to solve your problems. <br />
+					<br />
+					How?.. Click below to find out. <br />
+				</p>
+				<button className='aboutBTN'> About Us </button>
 			</section>
 		</>
 	);
