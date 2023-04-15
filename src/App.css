@@ -206,7 +206,6 @@
     font-size: 6rem;
     font-family: 'Source Serif 4', serif;
     font-weight: 800;
-    font-size: 6rem;
     color: var(--primary);
     margin-bottom: 3rem;
 }
@@ -232,5 +231,59 @@
 /* ------------------------------ Registration Page ------------------------------ */
 
 .regWrap{
-    height: 100vh;
+    padding: 13rem 0 5rem 0;
+    width: 100%;
+}
+
+.formWrap{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3rem 5rem 6rem;
+    background-color: var(--tertiary);
+}
+
+.regHEAD{
+    font-size: 6rem;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+}
+
+.regForm{
+    width: 60rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary);
+}
+
+.regForm label{
+    font-size: 2rem;
+}
+
+.regForm .inputarea {
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+    height: 4rem;
+    border: 0.1rem solid var(--primary);
+    outline: none;
+    overflow: hidden;
+    padding: 0 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+    color: var(--primary);
+}
+
+.veg{
+    margin-right: 3rem;
+}
+
+.regForm input{
+    margin: 1.5rem 0 2rem 0;
+}
+
+.regForm textarea {
+    height: 20rem !important;
 }

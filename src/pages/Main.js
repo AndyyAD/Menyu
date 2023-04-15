@@ -3,10 +3,23 @@ import Arrow from '../img/down arrow.svg'
 import Search from '../img/search.svg'
 import Chicken from '../img/chicken.png'
 import Restaurant from '../img/retaurant.png'
+import About from './About'
+import Register from './Register'
+import { Routes, useNavigate, Route } from 'react-router-dom'
 
 const Main = () => {
-    return (
-        <>
+	const navigate = useNavigate();
+
+	const openAbout = () => {
+		navigate('/about');
+	}
+
+	const openReg = () => {
+		navigate('/register');
+	}
+
+	return (
+		<>
 			<section className="scMain" id="up">
 				<div className="scTextWrapper">
 					<h1 className="scHead"> Order </h1>
@@ -34,7 +47,10 @@ const Main = () => {
 				<div className="regRight">
 					<h1 className="regHead"> Do you own a Restaurant? </h1>
 					<p className="regText"> Start your new menu with us with just a few clicks. It’s that simple. </p>
-					<button className='regBTN'> Register </button>
+					<button className='regBTN' onClick={openReg}> Register </button>
+					<Routes>
+						<Route path='/register' element={<Register/>}/>
+					</Routes>
 				</div>
 			</section>
 
@@ -52,11 +68,14 @@ const Main = () => {
 						<br />
 						How?.. Click below to find out. <br />
 					</p>
-					<button className='aboutBTN'> Know more </button>
+					<button className='aboutBTN' onClick={openAbout}> Know more </button>
+					<Routes>
+						<Route path='/about' element={<About/>}/>
+					</Routes>
 				</div>
 			</section>
 		</>
-    )
+	)
 }
 
 export default Main
