@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './component/Navbar';
+import Footer from './component/Footer';
 import Arrow from './img/down arrow.svg'
 import Search from './img/search.svg'
 import Chicken from './img/chicken.png'
@@ -9,7 +10,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<section className="scMain">
+			<section className="scMain" id="up">
 				<div className="scTextWrapper">
 					<h1 className="scHead"> Order </h1>
 					<p className="scText"> Place your order, pay and relax while we bring your food. </p>
@@ -57,6 +58,7 @@ function App() {
 					<button className='aboutBTN'> Know more </button>
 				</div>
 			</section>
+			<Footer/>
 		</>
 	);
 }
