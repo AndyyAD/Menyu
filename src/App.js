@@ -40,20 +40,22 @@ function App() {
 				</div>
 			</section>
 
-			<section className="aboutUs container">
-				<h1 className="aboutHead"> About Us... </h1>
-				<p className="aboutText">
-					Have you ever kept waiting for a waiter to take your order at restaurant? <br />
-					or <br />
-					As a restaurant owner, do you want to serve your customer better and manage <br />
-					orders better. <br />
-					<br />
-					Well, here we are. <br />
-					Menyu is the perfect place to solve your problems. <br />
-					<br />
-					How?.. Click below to find out. <br />
-				</p>
-				<button className='aboutBTN'> About Us </button>
+			<section className="aboutUs">
+				<div className="nav-container">
+					<h1 className="aboutHead"> About us... </h1>
+					<p className="aboutText">
+						Have you ever kept waiting for a waiter to take your order at restaurant? <br />
+						or <br />
+						As a restaurant owner, do you want to serve your customer better and manage <br />
+						orders better. <br />
+						<br />
+						Well, here we are. <br />
+						Menyu is the perfect place to solve your problems. <br />
+						<br />
+						How?.. Click below to find out. <br />
+					</p>
+					<button className='aboutBTN'> Know more </button>
+				</div>
 			</section>
 		</>
 	);
