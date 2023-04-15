@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import About from '../pages/About'
+import Register from '../pages/Register'
 import '../App.css'
 
 export default class Hamburger extends Component {
@@ -23,12 +26,20 @@ export default class Hamburger extends Component {
                     <span className="ham-line"> </span>
                     <span className="ham-line"> </span>
                 </div>
-                <ul ref={this.itemRef} className="nav-items navItems ham-container">
-                    <li className="nav-item1"> <a href="/"> Home </a> </li>
-                    <li className="nav-item2"> <a href="/"> Scan QR </a> </li>
-                    <li className="nav-item3"> <a href="/"> About Us </a> </li>
-                    <li className="nav-item4"> <a href="/"> Register/Login </a> </li>
-                </ul>
+                <BrowserRouter>
+                    <ul ref={this.itemRef} className="nav-items navItems ham-container">
+                        <li className="nav-item1"> <Link to="/"> Home </Link> </li>
+                        <li className="nav-item2"> <Link to="/"> QR Scan </Link> </li>
+                        <li className="nav-item3"> <Link to="/about"> About Us </Link> </li>
+                        <li className="nav-item4"> <Link to="/register"> Register </Link> </li>
+                    </ul>
+
+                    <Routes>
+                        <Route path="/" />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/register" element={<Register />} />
+                    </Routes>
+                </BrowserRouter>
             </div>
         )
     }
