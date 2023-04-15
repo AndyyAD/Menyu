@@ -193,3 +193,44 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+/* ------------------------------ About Page ------------------------------ */
+
+.aboutWrap{
+    height: 102vh;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.aboutHEAD {
+    font-size: 6rem;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 800;
+    font-size: 6rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.aboutTEXT{
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+    color: var(--primary);
+}
+
+.aboutPageBTN{
+    padding: 1.5rem 4rem;
+    border-radius: 3rem;
+    outline: none;
+    border: none;
+    background: var(--secondary);
+    color: var(--background);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ------------------------------ Registration Page ------------------------------ */
+
+.regWrap{
+    height: 100vh;
+}

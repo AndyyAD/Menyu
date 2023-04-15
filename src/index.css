@@ -44,36 +44,13 @@ a{
     margin: 0 auto;
 }
 
-.ham-container{
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
-}
-
 /* ------------------------------ Navbar ------------------------------ */
 
 .navbar {
+    border: 2px solid red;
     width: 100%;
-    height: 10.6rem;
     position: absolute;
     z-index: 1000;
-}
-
-.navbar-wrap {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ham-lines span {
-    width: 2.6rem;
-    height: .4rem;
-    display: block;
-    background: var(--primary);
-    margin: .4rem auto;
-    border-radius: 2rem;
-    transition: transform .5s;
 }
 
 .logo {
@@ -81,48 +58,29 @@ a{
     font-size: 3.2rem;
 }
 
-.ham-lines.active .ham-line:nth-child(1) {
-    transform: translateY(.8rem) rotate(45deg);
-
+.nav-items{
+    display: flex;
+    height: 10.6rem;
+    align-items: center;
 }
 
-.ham-lines.active .ham-line:nth-child(2) {
-    transform: scale(0);
-}
-
-.ham-lines.active .ham-line:nth-child(3) {
-    transform: translateY(-.8rem) rotate(-45deg);
-}
-
-.nav-items {
+.navItem{
     width: 100%;
-    background-color: var(--background);
-    margin-top: 5rem;
-    padding: 8rem 10rem;
     position: absolute;
-    top: 80%;
-    left: -100%;
-    transform: translate(-50%, 0%);
-    transition: all .5s;
+    z-index: 1000;
 }
 
-.nav-items li {
-    font-size: 2.5rem;
-    border-bottom: 1px solid var(--primary);
-    text-align: center;
+.navWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-items li a {
-    display: block;
-    padding: 3rem;
-}
-
-.nav-items .nav-item1 {
-    border-top: 1px solid var(--primary);
-}
-
-.nav-items.active {
-    left: 50%;
+.nav-items li{
+    font-family: 'Source Serif 4', serif;
+    margin-right: 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 /* ------------------------------ Footer ------------------------------ */
@@ -136,6 +94,10 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 4rem 0;
+}
+
+.backtotop img{
+    width: 6rem;
 }
 
 .footHead{
@@ -153,10 +115,6 @@ a{
 
 .footList{
     display: flex;  
-}
-
-.backtotop img{
-    width: 6rem;
 }
 
 .footEnd{
