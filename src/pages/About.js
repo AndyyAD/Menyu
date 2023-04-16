@@ -5,9 +5,9 @@ import { Routes, useNavigate, Route } from 'react-router-dom'
 const About = () => {
     const navigate = useNavigate();
 
-	const openReg = () => {
-		navigate('/register');
-	}
+    const openReg = () => {
+        navigate('/register');
+    }
     return (
         <>
             <div className="aboutWrap" id="up">
@@ -21,15 +21,15 @@ const About = () => {
                     Well, here we are. <br />
                     Menyu is the perfect place to solve your problems. <br />
                     <br />
-                    Register your restaurant by clicking below and fill out the form. <br/>
-                    <br/>
-                    We will develop a customize menu for you and send a QR <br/>
+                    Register your restaurant by clicking below and fill out the form. <br />
+                    <br />
+                    We will develop a customize menu for you and send a QR <br />
                     on your Email so that your menu can be accessed from the table. <br />
                 </p>
                 <button className='aboutPageBTN' onClick={openReg}> Register </button>
                 <Routes>
-						<Route path='/register' element={<Register/>}/>
-					</Routes>
+                    <Route path='/register' element={<Register />} />
+                </Routes>
             </div>
         </>
     )
