@@ -107,10 +107,16 @@ a{
     margin-bottom: 3rem;
 }
 
-.footList li{
+.footList li button{
     font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
     margin-right: 4rem;
     color: var(--background);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .footList{
