@@ -36,7 +36,7 @@ const Main = () => {
 						<div className="searchBox">
 							<input type="text" />
 							<img src={Search} alt="" />
-						</div>
+						</div> 
 					</div>
 					<img src={Chicken} alt="" className="chickenImg" />
 				</div>

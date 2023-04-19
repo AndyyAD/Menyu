@@ -4,7 +4,8 @@
     background-image: linear-gradient(rgba(231, 246, 242, 0.7), rgba(231, 246, 242, 0.7)), url(./img/background.png);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .scTextWrapper {
@@ -12,6 +13,7 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .scHead {
@@ -163,7 +165,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    
 }
 
 .aboutHead {
@@ -196,7 +197,7 @@
 
 /* ------------------------------ About Page ------------------------------ */
 
-.aboutWrap{
+.aboutWrap {
     height: 102vh;
     text-align: center;
     padding-top: 15rem;
@@ -210,13 +211,13 @@
     margin-bottom: 3rem;
 }
 
-.aboutTEXT{
+.aboutTEXT {
     font-size: 2.4rem;
     margin-bottom: 5rem;
     color: var(--primary);
 }
 
-.aboutPageBTN{
+.aboutPageBTN {
     padding: 1.5rem 4rem;
     border-radius: 3rem;
     outline: none;
@@ -230,19 +231,19 @@
 
 /* ------------------------------ Registration Page ------------------------------ */
 
-.regWrap{
+.regWrap {
     padding: 13rem 0 5rem 0;
     width: 100%;
 }
 
-.formWrap{
+.formWrap {
     width: fit-content;
     margin: 0 auto;
     padding: 3rem 5rem 6rem;
     background-color: var(--tertiary);
 }
 
-.regHEAD{
+.regHEAD {
     font-size: 6rem;
     font-family: 'Source Serif 4', serif;
     font-weight: 800;
@@ -251,7 +252,7 @@
     color: var(--primary);
 }
 
-.regForm{
+.regForm {
     width: 60rem;
     position: relative;
     left: 50%;
@@ -259,7 +260,7 @@
     color: var(--primary);
 }
 
-.regForm label{
+.regForm label {
     font-size: 2rem;
 }
 
@@ -276,11 +277,11 @@
     color: var(--primary);
 }
 
-.veg{
+.veg {
     margin-right: 3rem;
 }
 
-.regForm input{
+.regForm input {
     margin: 1.5rem 0 2rem 0;
 }
 
@@ -290,8 +291,47 @@
 
 /* ------------------------------ Feedback Page ------------------------------ */
 
-.feedbackWrap{
+.feedbackWrap {
     border: 2px solid red;
     padding: 13rem 0 5rem 0;
     width: 100%;
+}
+
+/* ------------------------------ Media queries ------------------------------ */
+
+@media (max-width: 900px) {
+    .scMain{
+        height: 100vh;
+    }
+
+    .scTextWrapper {
+        top: 55%;
+    }
+
+    .downArrow {
+        bottom: 4%;
+    }
+
+    .search{
+        position: relative;
+        border-radius: 0;
+    }
+
+    .searchWrap {
+        display: block;
+    }
+
+    .chickenImg, .restaurantImg{
+        display: none;
+    }
+
+    .searchBox {
+        width: 32rem;
+    }
+
+    .aboutWrap {
+        width: 90%;
+        padding-top: 20rem;
+        margin: 0 auto 10rem auto;
+    }
 }

@@ -47,7 +47,6 @@ a{
 /* ------------------------------ Navbar ------------------------------ */
 
 .navbar {
-    border: 2px solid red;
     width: 100%;
     position: absolute;
     z-index: 1000;
@@ -86,7 +85,7 @@ a{
 /* ------------------------------ Footer ------------------------------ */
 
 .footer{
-    height: 25rem;
+    height: auto;
     background-color: var(--primary);
 }
 
@@ -127,5 +126,44 @@ a{
     font-size: 2rem;
     color: var(--background);
     text-align: center;
-    margin-top: 2.2rem;
+    padding: 2.2rem 0;
+}
+
+
+/* ------------------------------ Media queries ------------------------------ */
+
+@media (max-width: 900px) {
+    html{
+        font-size: 50%;
+    }
+
+    .logo{
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+
+    .nav-items li:nth-child(4){
+        margin-right: 0;
+    }
+
+    .navWrap{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .footWrap{
+        display: block;
+    }
+
+    .footList li button{
+        margin-right: 3.8rem;
+    }
+
+    .footList li:nth-child(4) button{
+        margin-right: 0;
+    }
+
+    .footLeft{
+        margin-bottom: 3rem;
+    }
 }
