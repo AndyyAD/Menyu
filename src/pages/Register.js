@@ -3,7 +3,13 @@ import React, { useState } from 'react'
 const Register = () => {
 
     const [reg, setreg] = useState({
-        name: "", email: "", restaurantname: "", restaurantdesc: "", tableno: "", foodtype: "", menu: ""
+        name: "", 
+        email: "", 
+        restaurantname: "", 
+        restaurantdesc: "", 
+        tableno: "", 
+        foodtype: "", 
+        menu: ""
     });
 
     let name, value;
